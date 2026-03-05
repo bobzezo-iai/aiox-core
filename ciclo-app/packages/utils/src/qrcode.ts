@@ -6,7 +6,7 @@
  * No network connection required to validate the HMAC signature.
  */
 
-import { createHmac } from 'crypto'
+import { createHmac, timingSafeEqual } from 'crypto'
 
 // ============================================================
 // Types
@@ -97,7 +97,7 @@ export function verifyQRPayload(
       return { valid: false }
     }
 
-    const isValid = require('crypto').timingSafeEqual(sigBuffer, expectedBuffer)
+    const isValid = timingSafeEqual(sigBuffer, expectedBuffer)
 
     if (isValid) {
       return { valid: true, data: parsed.payload }
