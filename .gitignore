@@ -1,6 +1,7 @@
 # Dependencies
 node_modules/
 pnpm-lock.yaml
+!ciclo-app/pnpm-lock.yaml
 bun.lock
 deno.lock
 
