@@ -498,6 +498,13 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ===== ASSINATURA ===== */}
+      <div className="py-8 text-center">
+        <p className="text-xs tracking-wide" style={{ color: '#d4a574' }}>
+          iAi. ECOssistema Base Tríade®
+        </p>
+      </div>
     </div>
   )
 }

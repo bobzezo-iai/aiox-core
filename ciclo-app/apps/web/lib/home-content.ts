@@ -147,9 +147,9 @@ export const PRATICAS: Pratica[] = [
 // === EQUIPE ===
 
 export const EQUIPE = {
-  titulo: 'Quem Está por Trás',
-  subtitulo: 'Uma equipe de terapeutas e facilitadores dedicados ao bem-estar integral',
-  descricao: 'O Ciclo das Estações é idealizado e conduzido por profissionais apaixonados por práticas integrativas, autocuidado e reconexão com a natureza. Cada jornada reúne facilitadores especializados em Yoga, Ayurveda, Sound Healing, Breathwork e outras modalidades — criando experiências únicas e transformadoras a cada estação.',
+  titulo: 'Idealização e Coordenação',
+  subtitulo: 'iAi. ECOssistema Base Tríade\u00AE',
+  descricao: 'O Ciclo das Estações é idealizado e coordenado pelo iAi. ECOssistema Base Tríade\u00AE — um ecossistema dedicado à reconexão entre humanidade e natureza. Cada jornada reúne facilitadores especializados em Yoga, Ayurveda, Sound Healing, Breathwork e outras modalidades, criando experiências únicas e transformadoras a cada estação.',
 } as const
 
 // === FAQ ===
@@ -196,14 +196,14 @@ export const CANCELAMENTO: CancellationRule[] = [
 export const INFO_PRATICAS: PracticalInfo[] = [
   {
     titulo: 'Local',
-    linhas: ['Base Tríade — Barra Velha, SC', 'Estacionamento gratuito e seguro'],
+    linhas: ['Base Tríade — Barra Velha, SC'],
   },
   {
     titulo: 'Contato',
-    linhas: ['contato@basetriade.com', 'WhatsApp: (47) 999 660 210'],
+    linhas: ['contato@basetriade.com', 'WhatsApp: (47) 999 525 562'],
   },
   {
-    titulo: 'Gestoras do Programa',
-    linhas: ['@koch.milenar', '@podprana'],
+    titulo: 'Idealização e Coordenação',
+    linhas: ['iAi. ECOssistema Base Tríade\u00AE'],
   },
 ]
