@@ -18,13 +18,6 @@ export interface Pratica {
   descricao: string
 }
 
-export interface Gestora {
-  nome: string
-  instagram: string
-  site?: string
-  bio: string
-}
-
 export interface FAQItem {
   pergunta: string
   resposta: string
@@ -52,7 +45,7 @@ export const HERO_CONTENT = {
   locationBadge: 'Base Tríade — Barra Velha, SC',
   titulo: 'Ciclo das Estações',
   tagline: 'Respire. Reconecte. Renasça.',
-  subtitulo: 'O primeiro programa de autocuidado cíclico do Brasil',
+  subtitulo: 'Imersões sazonais de autocuidado, reconexão e transformação',
 } as const
 
 // === SOBRE ===
@@ -151,26 +144,13 @@ export const PRATICAS: Pratica[] = [
   },
 ]
 
-// === GESTORAS DO PROGRAMA ===
+// === EQUIPE ===
 
-export const GESTORAS: Gestora[] = [
-  {
-    nome: 'Milena Koch',
-    instagram: '@koch.milenar',
-    site: 'www.ocamilenar.com.br',
-    bio: 'Terapeuta holística, facilitadora de vivências integrativas e cofundadora do Ciclo das Estações. Milena é especialista em práticas ancestrais de cura e autocuidado, com formação em Ayurveda, Aromaterapia e Terapias Vibracionais. Conduz jornadas que resgatam a sabedoria milenar e a conexão com os ciclos da natureza.',
-  },
-  {
-    nome: 'Lionara Prana',
-    instagram: '@podprana',
-    bio: 'Yogini, terapeuta integrativa e cofundadora do Ciclo das Estações. Formada em Hatha Vinyasa e Hatha Chakra Yoga, Lionara conduz práticas que unem movimento, respiração e consciência. Seu trabalho é guiado pela filosofia do Prana — a energia vital que permeia todas as coisas.',
-  },
-  {
-    nome: 'Daniela',
-    instagram: '@daniela',
-    bio: 'Terapeuta e facilitadora dedicada ao bem-estar integral. Integra a equipe de gestão do Ciclo das Estações, contribuindo com sua experiência em práticas holísticas e organização de eventos transformadores.',
-  },
-]
+export const EQUIPE = {
+  titulo: 'Quem Está por Trás',
+  subtitulo: 'Uma equipe de terapeutas e facilitadores dedicados ao bem-estar integral',
+  descricao: 'O Ciclo das Estações é idealizado e conduzido por profissionais apaixonados por práticas integrativas, autocuidado e reconexão com a natureza. Cada jornada reúne facilitadores especializados em Yoga, Ayurveda, Sound Healing, Breathwork e outras modalidades — criando experiências únicas e transformadoras a cada estação.',
+} as const
 
 // === FAQ ===
 
@@ -220,7 +200,7 @@ export const INFO_PRATICAS: PracticalInfo[] = [
   },
   {
     titulo: 'Contato',
-    linhas: ['contato@basetriade.com', 'WhatsApp: (47) 999 660 210 — Milena Koch'],
+    linhas: ['contato@basetriade.com', 'WhatsApp: (47) 999 660 210'],
   },
   {
     titulo: 'Gestoras do Programa',

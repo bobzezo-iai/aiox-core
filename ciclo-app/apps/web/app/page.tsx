@@ -11,7 +11,7 @@ import {
   PROPOSITOS,
   PROGRAMACAO,
   PRATICAS,
-  GESTORAS,
+  EQUIPE,
   FAQ_ITEMS,
   CANCELAMENTO,
   INFO_PRATICAS,
@@ -334,43 +334,18 @@ export default async function HomePage() {
 
       <SacredDivider variant="line" />
 
-      {/* ===== GESTORAS DO PROGRAMA ===== */}
+      {/* ===== EQUIPE ===== */}
       <section className="section-padding bg-background">
-        <div className="mx-auto max-w-4xl">
-          <h2 className="text-center font-heading text-[22px] font-bold sm:text-3xl" style={{ color: '#8B4513' }}>
-            Quem Está por Trás
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-heading text-[22px] font-bold sm:text-3xl" style={{ color: '#8B4513' }}>
+            {EQUIPE.titulo}
           </h2>
-          <p className="mt-2 text-center text-[13px] text-muted-foreground">
-            As gestoras que idealizam e conduzem o Ciclo das Estações
+          <p className="mt-2 text-[13px] text-muted-foreground">
+            {EQUIPE.subtitulo}
           </p>
-          <div className="mt-8 space-y-4">
-            {GESTORAS.map((g) => (
-              <div
-                key={g.nome}
-                className="rounded-lg border bg-white p-4 sm:p-6"
-                style={{ borderColor: '#e8ddd0' }}
-              >
-                <div className="flex items-center gap-3">
-                  <div
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-sm font-semibold"
-                    style={{ backgroundColor: 'rgba(212, 165, 116, 0.15)', color: '#8B4513' }}
-                  >
-                    {g.nome.split(' ').map(n => n[0]).join('').slice(0, 2)}
-                  </div>
-                  <div>
-                    <h3 className="text-base font-semibold" style={{ color: '#2d1810' }}>{g.nome}</h3>
-                    <p className="text-xs font-medium" style={{ color: '#8B4513' }}>
-                      {g.instagram}
-                      {g.site && <span className="ml-2 text-muted-foreground">· {g.site}</span>}
-                    </p>
-                  </div>
-                </div>
-                <p className="mt-3 text-[13px] leading-relaxed" style={{ color: '#6b5744', textAlign: 'justify' }}>
-                  {g.bio}
-                </p>
-              </div>
-            ))}
-          </div>
+          <p className="mt-6 text-sm leading-relaxed sm:text-base" style={{ color: '#6b5744', maxWidth: '640px', margin: '1.5rem auto 0', textAlign: 'justify' }}>
+            {EQUIPE.descricao}
+          </p>
         </div>
       </section>
 
